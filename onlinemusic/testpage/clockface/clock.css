@@ -1,0 +1,106 @@
+    body {
+        background-color: darkcyan;
+    }
+    
+    .clock {
+        border: 6px solid#ff6600;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%) rotate(-90deg);
+    }
+    
+    .sec-div {
+        position: absolute;
+        left: 47.5%;
+        top: 47.5%;
+        background-color: #ffffff;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        z-index: 10;
+    }
+    
+    .sec {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 13px;
+        transform: translate(-50%, -50%);
+        height: 3px;
+        border-radius: 1vw;
+        background-color: red;
+        margin-left: 60px;
+    }
+    
+    .min-div {
+        position: absolute;
+        left: 47.5%;
+        top: 47.5%;
+        background-color: #ff6600;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        z-index: 15;
+    }
+    
+    .min {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 13px;
+        transform: translate(-50%, -50%);
+        height: 3px;
+        border-radius: 1vw;
+        background-color: #ff6600;
+        margin-left: 55px;
+    }
+    
+    .hour-div {
+        position: absolute;
+        left: 47.5%;
+        top: 47.5%;
+        background-color: #ff6600;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        margin-right: 100px;
+    }
+    
+    .hour {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 13px;
+        transform: translate(-50%, -50%);
+        height: 8px;
+        border-radius: 1vw;
+        background-color: #ff6600;
+        margin-left: 36px;
+    }
+    
+    .div {
+        position: absolute;
+        left: 47.5%;
+        top: 47.5%;
+        background-color: #ffffff;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 100px;
+        z-index: 20;
+        border: 3px solid #ff6600;
+    }
+    
+    .background {
+        position: relative;
+        left: 50%;
+        top: 70vw;
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%);
+    }

@@ -1,0 +1,46 @@
+<html>
+<link rel="stylesheet" href="loginstyle.css">
+
+<head>
+    <title>Login page</title>
+    <h1>WELCOME TO THE LOGIN INTERFACE</h1>
+
+</head>
+
+<body class="bg1">
+    <div class="container">
+        <div class="panel">
+            <div class="row">
+                <div class="col1">
+                    <form class="form" action="homepage.html">
+                        <input type="text" class="username" placeholder="Username" required>
+                        <br/>
+                        <input type="password" class="password" placeholder="Password" id="password" maxlength="8" required>
+                        <i aria-hidden="true" id="eye" onclick="toggle()"><a class="show" href="#">see</a></i>
+                        <br/>
+                        <span></span>
+                        <input class="login" type="submit" value="login">
+                        <h4>Dont have an account?<a href="register.html">register</a>with us</h4>
+                    </form>
+                    <script>
+                        alert('Enter your personal details to proceed')
+                        var state = false;
+
+                        function toggle() {
+                            if (state) {
+                                document.getElementById("password").setAttribute("type", "password");
+                                state = false;
+                            } else {
+                                document.getElementById("password").setAttribute("type", "text");
+                                state = true;
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="col2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

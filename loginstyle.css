@@ -1,0 +1,312 @@
+.bg1 {
+    background-image: url(images/nature_big_3.jpg);
+    background-image: cover;
+}
+
+h1 {
+    position: absolute;
+    left: 30%;
+    font-family: Forte;
+    color: antiquewhite;
+}
+
+.form {
+    background: none;
+    opacity: .5;
+    position: inherit;
+    display: block;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    border-bottom-width: 500px;
+    backface-visibility: 2;
+    background-blend-mode: luminosity;
+    top: 30%;
+    left: 35%;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 25px;
+}
+
+.form:hover {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    background: none;
+    backface-visibility: hidden;
+}
+
+.form {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    text-align: center;
+}
+
+.username {
+    display: block;
+    outline: none;
+    float: none;
+    box-sizing: border-box;
+    text-align: center;
+    width: 50%;
+    font-size: 18px;
+    border: 0;
+    border: 2px solid #DA427D;
+    object-position: center;
+    padding: 14px 10px;
+    margin-top: 5px;
+    border-radius: 50px;
+    font-family: fantasy;
+    text-align: center;
+    color: #3A0F4C;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 30px rgba(22, 89, 233, 0.4);
+}
+
+.login {
+    display: block;
+    outline: none;
+    float: none;
+    box-sizing: border-box;
+    text-align: center;
+    width: 50%;
+    font-size: 18px;
+    border: 0;
+    border: 2px solid #DA427D;
+    object-position: center;
+    padding: 14px 10px;
+    margin-top: 5px;
+    border-radius: 50px;
+    font-family: fantasy;
+    text-align: center;
+    color: #3A0F4C;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 30px rgba(22, 89, 233, 0.4);
+}
+
+.password {
+    display: block;
+    outline: none;
+    float: none;
+    box-sizing: border-box;
+    text-align: center;
+    width: 50%;
+    font-size: 18px;
+    border: 0;
+    border: 2px solid #DA427D;
+    object-position: center;
+    padding: 14px 10px;
+    margin-top: 5px;
+    border-radius: 50px;
+    font-family: fantasy;
+    text-align: center;
+    color: #3A0F4C;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 30px rgba(22, 89, 233, 0.4);
+}
+
+a {
+    text-decoration: none;
+    text-decoration: line-through;
+}
+
+a .show:visited {
+    text-decoration: none;
+}
+
+h4 {
+    font-family: serif;
+    color: darkgreen;
+}
+
+::placeholder {
+    color: #9a9a9a;
+    font-weight: 400;
+}
+
+.login {
+    padding-top: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.show {
+    position: absolute;
+    left: 205px;
+    transform: translate(0, -50%);
+    top: 38%;
+    cursor: alias;
+}
+
+.form username {
+    width: 200px;
+    background: none;
+}
+
+password {
+    width: 400px;
+    background: none;
+}
+
+.form input[type="text"]:hover {
+    border-color: #2ecc71;
+    background: none;
+    object-position: center;
+    width: 200px;
+    transition: all .6s ease-in-out;
+}
+
+form input[type="password"]:hover {
+    border-color: #2ecc71;
+    background: none;
+    object-position: center;
+    width: 300px;
+    transition: all .6s ease-in-out;
+}
+
+.login:hover {
+    background: linear-gradient(40deg, #0B4141, #03070F, #03070F);
+    transition-delay: .5s;
+    transition: all 0.9s ease-in-out;
+    font-family: Juice ICT;
+}
+
+.bg2 {
+    background-image: url(images/nature_big_3.jpg);
+    background-repeat: no-repeat;
+    width: inherit;
+}
+
+.register {
+    background: black;
+    opacity: .5;
+    position: inherit;
+    display: block;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    border-bottom-width: 500px;
+    backface-visibility: 2;
+    background-blend-mode: luminosity;
+    top: 30%;
+    left: 35%;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 25px;
+}
+
+.register:hover {
+    background: none;
+    transition: .9s ease-in-out;
+    opacity: 3;
+}
+
+#email {
+    padding: 10px;
+    margin: 5px;
+    outline: none;
+    text-align: center;
+    background: none;
+    border-color: none;
+    border-radius: 30px;
+}
+
+#email:hover {
+    background: none;
+    opacity: 3;
+    resize: horizontal;
+    border-color: aqua;
+    width: 250px;
+    transition: all .9s ease-in-out;
+    border-radius: 30px;
+}
+
+#username {
+    padding: 10px;
+    margin: 5px;
+    outline: none;
+    background: none;
+    border-color: none;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#username:hover {
+    background: none;
+    opacity: 3;
+    resize: horizontal;
+    border-color: aqua;
+    width: 200px;
+    transition: all .9s ease-in-out;
+    border-radius: 30px;
+}
+
+#password1 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    outline: none;
+    background: none;
+    border-color: none;
+    border-radius: 30px;
+}
+
+#password1:hover {
+    background: none;
+    opacity: 3;
+    resize: horizontal;
+    border-color: aqua;
+    width: 250px;
+    transition: all .9s ease-in-out;
+    border-radius: 30px;
+}
+
+#password2 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    outline: none;
+    background: none;
+    border-color: none;
+    border-radius: 30px;
+}
+
+#password2:hover {
+    background: none;
+    opacity: 3;
+    resize: horizontal;
+    border-color: aqua;
+    width: 250px;
+    transition: all .9s ease-in-out;
+    border-radius: 30px;
+}
+
+.reg {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    outline: none;
+    background: black;
+    color: ghostwhite;
+    border-color: whitesmoke;
+    border-radius: 30px;
+    width: 150px;
+}
+
+.reg:hover {
+    background: linear-gradient(0deg, #532015, #6C98FF, white);
+    opacity: 3;
+    resize: horizontal;
+    border-color: white;
+    width: 100px;
+    transition: all .9s ease-in-out;
+    border-radius: 30px;
+}

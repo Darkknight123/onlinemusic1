@@ -1,0 +1,44 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="loginstyle.css" rel="stylesheet">
+
+<head>
+
+    <title></title>
+</head>
+
+<body class="bg2">
+    <form class="register" action="userlogin.html">
+        <input type="email" size="20" id="Email" placeholder="Email" required>
+        <br/>
+        <input type="text" size="10" id="Username" placeholder="Username" required>
+        <br/>
+        <input type="password" size="30" id="Password1" placeholder="Password" required>
+        <i class="fa fa-eye" onclick="toggle()"></i>
+        <input type="password" size="30" id="Password2" placeholder="Confirm Password" required>
+        <button class="btn" id="eye2" onclick="toggle()"><i class="fa fa-eye"></i></button>
+        <br/>
+        <input type="submit" class="reg" value="Register">
+
+    </form>
+    <script>
+        onclick('register') {
+            alert("Registration successfull ")
+        }
+
+        var state = false;
+
+        function toggle() {
+            if (state) {
+                document.getElementById("password").setAttribute("type", "password");
+                state = false;
+            } else {
+                document.getElementById("password").setAttribute("type", "text");
+                state = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
