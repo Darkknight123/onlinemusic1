@@ -44,7 +44,7 @@
     aside {
         width: 153px;
         height: 100%;
-        background-color: #26303c;
+        background-color: #353738;
         padding: 30px;
         position: fixed;
         top: 0;
@@ -96,10 +96,12 @@
     
     .ta-track-list .ta-track-card {
         position: relative;
+        box-shadow: 0 2px 7px rgba(black, -4);
     }
     
     .ta-track-list .ta-track-card .artwork {
         width: 10%;
+        height: 10%;
     }
     
     .ta-track-list .ta-track-card .artwork span {
@@ -115,16 +117,17 @@
         margin-bottom: 80%;
     }
     
-    .ta-track-list .ta-track-card .info {
-        background-color: rgb(black, .1);
+    .ta-track-list .ta-track-card .artwork .info {
+        background-color: rgb(black, -1);
         padding: 15px;
+        top: inherit;
     }
     
     .ta-track-list .ta-track-card .info .title {
         color: white;
         font-weight: 500;
-        font-size: 16px;
-        margin-bottom: 5px;
+        font-size: 18px;
+        margin-bottom: 3px;
         display: block;
     }
     
