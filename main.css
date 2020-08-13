@@ -1,146 +1,196 @@
-    body * * {
-        font-family: fantasy;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        outline: none;
-        backface-visibility: hidden;
-        -webkit-font-smoothing: antialised;
-    }
-    
-    body {
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-    
-    .ta-app-wrapper {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom right, #0f1014, #0f1014);
-        padding-top: 70px;
-        padding-left: 175px;
-        overflow: hidden;
-    }
-    
-    .ta-app {
-        width: 100%;
-        height: 100%;
-        background-color: rgb(35, 35, 39);
-        padding: 20px;
-        overflow-y: auto;
-    }
-    
-    nav .top {
-        width: calc(100%-150px);
-        height: 75px;
-        background-color: #26303c;
-        position: fixed;
-        right: 0;
-        top: 0;
-    }
-    
-    aside {
-        width: 153px;
-        height: 100%;
-        background-color: #353738;
-        padding: 30px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;
-    }
-    
-    aside .bread {
-        color: white;
-        font-weight: 500;
-        font-size: 18px;
-    }
-    
-    aside ul {
-        list-style: none;
-        display: block;
-        margin: 50px 0;
-    }
-    
-    aside ul li {
-        margin: 15px 0;
-    }
-    
-    aside ul li a {
-        font-size: 15px;
-        color: #777777;
-        font-weight: 400;
-    }
-    
-    aside ul li a:hover {
-        color: #eeeeee;
-    }
-    
-    aside ul li a:active {
-        color: #54bff4;
-    }
-    
-    aside ul li a i {
-        margin-right: 15px;
-        width: 24px;
-        font-size: 24px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .ta-track-list {
-        list-style: none;
-    }
-    
-    .ta-track-list .ta-track-card {
-        position: relative;
-        box-shadow: 0 2px 7px rgba(black, -4);
-    }
-    
-    .ta-track-list .ta-track-card .artwork {
-        width: 10%;
-        height: 10%;
-    }
-    
-    .ta-track-list .ta-track-card .artwork span {
-        padding-bottom: 100%;
-        display: block;
-        background-size: cover;
-        background-position: center;
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-        width: 250px;
-        height: 20px;
-        margin-left: 40%;
-        margin-bottom: 80%;
-    }
-    
-    .ta-track-list .ta-track-card .artwork .info {
-        background-color: rgb(black, -1);
-        padding: 15px;
-        top: inherit;
-    }
-    
-    .ta-track-list .ta-track-card .info .title {
-        color: white;
-        font-weight: 500;
-        font-size: 18px;
-        margin-bottom: 3px;
-        display: block;
-    }
-    
-    .ta-track-list .ta-track-card .info .title:hover {
-        color: green;
-    }
-    
-    .ta-track-list .ta-track-card .info .username {
-        font-size: 14px;
-        color: #aaaaaa;
-        font-weight: 500;
-    }
-    
-    .ta-track-list .ta-track-card .info .username:hover {
-        color: white;
-    }
+body * * {
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialised;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.ta-app-wrapper {
+    height: 100%;
+    background: linear-gradient(to bottom right, #0f1014, #0f1014);
+    padding-top: 70px;
+    padding-left: 175px;
+    overflow: hidden;
+}
+
+.ta-app {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(35, 35, 39);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.ta-list-title {
+    margin-bottom: 10px;
+}
+
+.ta-list-title h1 {
+    color: whitesmoke;
+    width: 100%;
+}
+
+.ta-list-title .flex-container {
+    margin-right: 5%;
+    display: flex;
+    flex: right;
+    justify-content: flex-end;
+}
+
+.ta-list-title .flex-container a {
+    color: wheat;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.ta-list-title .flex-container button i {
+    font-size: 15px;
+}
+
+.ta-start-board {
+    display: flex;
+    justify-content: right;
+}
+
+.ta-start-board li {
+    margin-bottom: 10px;
+    list-style: none;
+    color: rgba(white);
+}
+
+.ta-track-list {
+    list-style-type: none;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.ta-track-list .ta-track-card {
+    position: relative;
+    box-shadow: 0 2px 7px rgba(black, -4);
+}
+
+.ta-track-list .ta-track-card .artwork {
+    margin: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+    background: rgba#5c5858;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-decoration-line: none;
+    text-emphasis-color: white;
+    font-size: 10px;
+    font-family: fantasy;
+    float: left;
+}
+
+.ta-track-list .ta-track-card .artwork span {
+    text-align: center;
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    height: 150px;
+    margin-right: 30%;
+}
+
+.ta-track-list .ta-track-card .artwork .info {
+    background-color: rgb(black, -1);
+    padding: 2px;
+    top: inherit;
+}
+
+.ta-track-list .ta-track-card .info .title {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.ta-track-list .ta-track-card .info .title:hover {
+    color: rgb(14, 49, 14);
+}
+
+.ta-track-list .ta-track-card .info .username {
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 500;
+}
+
+.ta-track-list .ta-track-card .info .username:hover {
+    color: white;
+}
+
+nav .top {
+    width: calc(100%-150px);
+    height: 75px;
+    background-color: #26303c;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+aside {
+    width: 140px;
+    height: 100%;
+    background-color: #353738;
+    padding: 21px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+aside .bread {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+aside ul {
+    list-style: none;
+    display: block;
+    margin: 50px 0;
+}
+
+aside ul li {
+    margin: 15px 0;
+}
+
+aside ul li a {
+    font-size: 14px;
+    color: #777777;
+    font-weight: 400;
+}
+
+aside ul li a:hover {
+    color: #eeeeee;
+}
+
+aside ul li a:active {
+    color: #54bff4;
+}
+
+aside ul li a i {
+    margin-right: 15px;
+    width: 30px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
